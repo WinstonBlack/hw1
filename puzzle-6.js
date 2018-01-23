@@ -14,8 +14,7 @@ if (getColor == "blue") {
 } else {
   left
 }
-setColor(firstColorSeen)
-if (getColor == "blue") {
+if (firstColorSeen == "blue") {
   down
 } else {
   up
