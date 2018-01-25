@@ -1,3 +1,4 @@
+down
 while (getColor != "red") {
   right
 }
