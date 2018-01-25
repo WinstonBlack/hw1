@@ -1,48 +1,31 @@
-while (getColor != "red") {
-  down
-}
-var steps = 0
-while (steps < 8) {
-  down
-  steps = steps + 1
-}
+down
+moveDownSeven
 right
 right
-while (getColor != "red") {
-  up
-}
-var steps = 0
-while (steps < 7) {
-  down
-  steps = steps + 1
-}
+moveUpSeven
 right
 right
-while (getColor != "red") {
-  down
-}
-var steps = 0
-while (steps < 7) {
-  down
-  steps = steps + 1
-}
+moveDownSeven
 right
 right
-while (getColor != "red") {
-  up
-}
-var steps = 0
-while (steps < 7) {
-  up
-  steps = steps + 1
-  right
-  right
-  while (getColor != "red") {
-  down
-}
-var steps = 0
-while (steps < 7) {
-  down
-  steps = steps + 1
-}
+moveUpSeven
 right
+right
+moveDownSeven
+right
+
+function moveDownSeven {
+  var counter = 0
+  while (counter < 7) {
+    down
+    counter = counter + 1
+  }
+}
+
+function moveUpSeven {
+  var counter = 0
+  while (counter < 7) {
+    up
+    counter = counter + 1
+  }
+}
