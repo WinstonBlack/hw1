@@ -1,33 +1,18 @@
 down
-while (getColor != "red") {
-  right
-}
-var steps = 0
-while (steps < 9) {
-  right
-  steps = steps + 1
-}
-while (getColor != "red") {
-  down
-}
-var steps = 0
-while (steps < 9) {
-  down
-  steps = steps + 1
-}
-while (getColor != "red") {
-  left
-}
-var steps = 0
-while (steps < 9) {
-  left 
-  steps = steps + 1
-}
-while (getColor != "red") {
-  up
-}
-var steps = 0
-while (steps < 9) {
-  up
-  steps = steps + 1
+right
+drawLine("right", 8)
+down
+drawLine("down", 3)
+down
+drawLine("left", 8)
+up
+drawLine("up", 4)
+
+function drawLine(direction, steps) {
+  counter = 0
+  while (counter < steps) {
+    setColor("blue")
+    direction
+    counter = counter + 1
+  }
 }
